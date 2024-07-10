@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>HTML - Forms - Support</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+
+	<body>
+
+		<header>
+			<h2>SUPPORT</h2>
+		</header>
+
+		<section>
+
+			<nav>
+					<ul>
+						<li><a href="./Home.html">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="./Support.html">Support</a></li>
+					</ul>
+			</nav>
+
+			<article>
+
+				<h1>FORM</h1>
+				<p>Fill in the fields below</p>
+
+				<form method="post">
+
+					<div>
+						<label for="user">User</label><br>
+						<input type="text" name="user" id="user" placeholder="Enter the username of your account">
+					</div>
+
+					<div>
+						<p>
+							<label for="email">E-mail</label><br>
+							<input type="email" name="email" id="email" placeholder="Enter your E-mail">
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label for="message">Message</label><br>
+							<textarea type="message" name="message" id="message" rows="5"></textarea>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>What character do you know?</label><br>
+							<input type="checkbox" name="character"> Heizou
+							<input type="checkbox" name="character"> Shenhe
+							<input type="checkbox" name="character"> Raiden Shogun
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>What is your favorite character?</label><br>
+							<input type="radio" name="character"> Heizou
+							<input type="radio" name="character"> Shenhe
+							<input type="radio" name="character"> Raiden Shogun
+						</p>
+					</div>		
+
+					<div>
+						<label>Which character do you not like?</label>
+						<select>
+							<option value="Heizou">Heizou</option>
+							<option value="Shenhe">Shenhe</option>
+							<option value="Raiden Shogun">Raiden Shogun</option>
+							<option value="none" selected >None</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit">
+					</div>
+
+				</form>
+
+
+			</article>
+
+		</section>
+
+		<footer>
+			Desemvolvido por Guilherme Araújo
+		</footer>
+		
+	</body>
+</html>
