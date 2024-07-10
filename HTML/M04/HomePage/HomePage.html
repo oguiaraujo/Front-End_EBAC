@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>HOME PAGE</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+
+	<body>
+
+		<header>
+			<h2>HOME PAGE</h2>
+		</header>
+
+		<section>
+			<nav>
+          <h3>HTML Study</h3>
+          <ul>
+            <li><b>Modulo 03</b></li>
+              <ul>
+                <li><a href="/HTML/M03/M03Lessons.html">Lessons</a></li>
+                <li><a href="/HTML/M03/E-mail Marketing/E-mail Marketing.html">E-mail Marketing</a></li>
+              </ul>
+              <br>
+            <li><b>Modulo 04</b></li>
+              <ul>
+                <li><a href="/HTML/M04/M04Lessons/Home.html">Layout</a></li>
+                <li><a href="/HTML/M04/M04Lessons/Support.html">Forms</a></li>
+                <li><a href="/HTML/M04/HomePage/HomePage.html">Home Page</a></li>
+              </ul>
+							<br>
+							<li><b>Social Media</b></li>
+              <ul>
+                <li><a href="https://www.linkedin.com/in/jos%C3%A9-guilherme-silva-de-ara%C3%BAjo-38094530a/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/oguiaraujo" target="_blank">GitHub</a></li>
+                <li><a href="https://replit.com/@0Haki" target="_blank">Replit</a></li>
+              </ul>
+          </ul>
+					
+			</nav>
+
+			<article>
+
+				<img src="https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/441393380_477062468247661_3914208501545393051_n.jpg?ccb=11-4&amp;oh=01_Q5AaICJiNgPmuAkGK4iQVEuLOypICRG6D7XrG5qvbQJite9X&amp;oe=669AE9BE&amp;_nc_sid=e6ed6c&amp;_nc_cat=105" width="200" height="200">
+
+				<h1>Guilherme Araújo</h1>
+
+				<p>University student, pursuing a Bachelor's degree in Information
+					Systems at UFRN and student of the Front-End course at EBAC.</p>
+
+			</article>
+
+		</section>
+
+		<footer>
+			Developed by Guilherme Araújo
+		</footer>
+		
+	</body>
+</html>
