@@ -1,0 +1,100 @@
+/* File responsible for the style of the html pages */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: ser;
+  font-size: 120%;
+  background: #FEDD7F;
+}
+
+a {
+  color: #AA502E;
+}
+
+body {
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form div {
+  background: #FFFAD0;
+  color: #AA502E;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #AA502E;
+  padding: 10px;
+}
+
+[type="text"], [type="email"], textarea, label, li {
+  display: block;
+  width: 100%;
+}
+
+/* Style the header */
+header {
+  border: 20px solid #AA502E;
+  background-color: #FFFAD0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #AA502E;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  background: #FEDD7F;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #AA502E;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  border: 20px solid #AA502E;
+  background-color: #FFFAD0;
+  padding: 20px;
+  text-align: center;
+  color: #AA502E;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}

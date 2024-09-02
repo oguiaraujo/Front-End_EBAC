@@ -1,6 +1,16 @@
 /* File responsible for the style of the html pages */
 * {
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
 }
 
 body {
