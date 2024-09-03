@@ -7,8 +7,7 @@
 html {
   margin: 0;
   padding: 0;
-  font-family: ser;
-  font-size: 120%;
+  font-size: 62.5%;
   background: #FEDD7F;
 }
 
@@ -37,6 +36,7 @@ li {
   margin-bottom: 10px;
   border-bottom: 2px solid #AA502E;
   padding: 10px;
+  font-weight: bold;
 }
 
 [type="text"], [type="email"], textarea, label, li {
