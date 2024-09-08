@@ -1,0 +1,43 @@
+@import url(/CSS/reset.css);
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background-color: chartreuse;
+} 
+
+nav {
+  width: 20%;
+  height: 500px;
+  float: left;
+  background-color: brown;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+article {
+  width: 80%;
+  height: 100%;
+  float: right;
+  background-color: blueviolet;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.width-100 /* just the div */ {
+  width: 100%vw;
+  height: 500px; /* Viewport Width */
+  background-color: blue;
+  padding: 20px 0;
+}
+
+.fixed-width {
+  padding: 20px;
+  width: 300px;
+  background-color: aliceblue;
+  margin: 25px auto; /* (auto) centralized element */
+  text-align: center;
+}
