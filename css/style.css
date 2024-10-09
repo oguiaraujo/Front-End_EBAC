@@ -22,7 +22,7 @@ body, html {
 }
 
 header {
-  background-color: #0B1E26;
+  background-color: #070926;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ section {
 /* Create two columns/boxes that floats next to each other */
 nav {
   width: 20%;
-  background: #143543;
+  background: #0C1043;
   padding: 20px;
   color: #ffffff;
 }
@@ -70,7 +70,7 @@ nav ul {
 
 article {
   flex-grow: 1;
-  background-color: #5792B0;
+  background-color: #87A1C2;
 }
 
 .imagearticle {
@@ -88,7 +88,7 @@ div {
 }
 
 footer {
-  background-color: #0B1E26;
+  background-color: #070926;
   padding: 10px;
   text-align: center;
   color: white;
