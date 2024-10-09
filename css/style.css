@@ -70,12 +70,23 @@ nav ul {
 
 article {
   flex-grow: 1;
-  padding: 20px;
   background-color: #5792B0;
 }
 
+.imagearticle {
+  display: flex;
+  flex-grow: 1;
+  background: url(https://images5.alphacoders.com/110/thumb-1920-1107810.jpg);
+  background-position: center 75%;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+}
 
-/* Style the footer */
+div {
+  padding: 20px;
+}
+
 footer {
   background-color: #0B1E26;
   padding: 10px;
